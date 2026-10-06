@@ -1,0 +1,107 @@
+{
+  "name": "CustomTouchpad V7",
+  "vendorId": "0xFEED",
+  "productId": "0x0001",
+  "lighting": "none",
+  "customKeycodes": [
+    {"name": "SW_LAYER", "title": "Layer / Screensaver Tap-Hold", "shortName": "Layer"},
+    {"name": "SCRN_SPD_DN", "title": "Screensaver Speed Down", "shortName": "Spd-"},
+    {"name": "SCRN_SPD_UP", "title": "Screensaver Speed Up", "shortName": "Spd+"},
+    {"name": "SCRN_PAT_PREV", "title": "Screensaver Pattern Prev", "shortName": "Pat-"},
+    {"name": "SCRN_PAT_NEXT", "title": "Screensaver Pattern Next", "shortName": "Pat+"},
+    {"name": "TP_CIRC_TOG", "title": "Toggle Circular Scroll", "shortName": "Circ"},
+    {"name": "TP_SENS_CYC", "title": "Cycle Sensitivity", "shortName": "Sens"},
+    {"name": "SCRN_TOG", "title": "Toggle Screensaver", "shortName": "Jiggle"}
+  ],
+  "matrix": {
+    "rows": 1,
+    "cols": 2
+  },
+  "layouts": {
+    "labels": [
+      "Circular Scroll",
+      [
+        "Touchpad Sensitivity",
+        "Level 1 (Least - 4X)",
+        "Level 2 (3X)",
+        "Level 3 (Default - 2X)",
+        "Level 4 (Most - 1X)"
+      ],
+      [
+        "Pointer Speed / CPI",
+        "600 CPI (Slow)",
+        "800 CPI",
+        "1000 CPI (Default)",
+        "1400 CPI",
+        "1800 CPI (Fast)"
+      ],
+      "Hardware Smoothing",
+      "Tap to Click",
+      "Cursor Glide (Inertial Coasting)",
+      [
+        "Touchpad Acceleration",
+        "Disabled (Linear 1x)",
+        "Mild Curve (Up to 2x)",
+        "Balanced Curve (Up to 3.5x - Default)",
+        "Aggressive Curve (Up to 5x)",
+        "Ultra Curve (Up to 7x)"
+      ],
+      [
+        "Touchpad Precision Mode",
+        "Standard (1.0x)",
+        "Fine Control (0.75x Slow)",
+        "Microscopic Precision (0.5x Slow)"
+      ],
+      [
+        "Circular Scroll Direction",
+        "Clockwise = Scroll Down",
+        "Clockwise = Scroll Up (Inverted)"
+      ],
+      [
+        "Circular Scroll Ring Width",
+        "Narrow (15%)",
+        "Normal (25% - Default)",
+        "Wide (35%)"
+      ],
+      [
+        "Scroll Wheel Acceleration",
+        "Disabled (Linear 1x)",
+        "Mild (Up to 4x)",
+        "Standard (Up to 8x - Default)",
+        "Aggressive (Up to 12x)"
+      ],
+      "Invert Scroll Wheel Direction",
+      [
+        "Screensaver Auto-Timeout",
+        "Disabled (Manual Only)",
+        "1 Minute",
+        "3 Minutes",
+        "5 Minutes",
+        "10 Minutes"
+      ],
+      [
+        "Layer 1 LED Color",
+        "Solid Blue (Default)",
+        "Cyan",
+        "Green",
+        "Magenta / Purple",
+        "Yellow",
+        "Orange",
+        "Red",
+        "White",
+        "LED Off"
+      ]
+    ],
+    "keymap": [
+      [
+        { "x": 0, "y": 0 }, "0,0\n\n\n\n\n\n\n\n\ne", "0,1\n\n\n\n\n\n\n\n\ne",
+        { "x": 0.5 }, "1,0\n\n\n\n\n\n\n\n\ne", "1,1\n\n\n\n\n\n\n\n\ne"
+      ],
+      [
+        { "y": 0.25, "x": 0.5 }, "0,0",
+        { "x": 1.5 }, "0,1"
+      ]
+    ]
+  }
+}
+
