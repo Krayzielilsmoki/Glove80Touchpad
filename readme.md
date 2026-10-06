@@ -41,17 +41,21 @@ A DIY ergonomic desktop trackpad module powered by QMK & Vial on a Raspberry Pi 
 ### Electronics & Sensors
 | Component | Description | Notes |
 | :--- | :--- | :--- |
-| **RP2040 Pro Micro** | 3.3V RP2040 Microcontroller Board | USB Type-C recommended |
+| **RP2040 Pro Micro** | 3.3V RP2040 Microcontroller Board | USB Type-C recommended (sourced from AliExpress/Amazon) |
 | **Cirque GlidePoint TM040040** | 40mm Circular Trackpad (Curved Overlay `TM040040-2024-303`) | SPI interface configuration (remove R1 resistor on trackpad to enable SPI mode) |
-| **Panasonic EVQWGD001** | Roller Encoder | Used for primary vertical/horizontal scroll wheel |
-| **EC11 Rotary Encoder** | Incremental encoder with push button | Knob navigation & volume control |
+| **Panasonic EVQWGD001** | Roller Encoder | Used for primary vertical/horizontal scroll wheel (sourced from AliExpress) |
+| **EC11 Rotary Encoder** | Incremental encoder with push button | Knob navigation & volume control (AliExpress/Amazon) |
 | **WS2812B SMD LED** | 5050 / 3535 Addressable RGB LED | GP6 data line for status illumination |
+| **JST Connectors / Pre-crimped Wires** | JST-SH (1.0mm) or JST-XH/ZH (1.25mm/1.5mm) | **Crucial for assembly**: Allows each component to unplug easily, making final fitting inside the tight enclosure possible |
 | **Hookup Wire** | 28 AWG to 30 AWG silicone wire | Flexible stranded wire recommended |
+
+> [!TIP]  
+> Most electronic components (RP2040 Pro Micro, Cirque trackpad, EVQWGD001 roller, EC11 encoders, and JST connector kits) can be sourced very affordably from **AliExpress**.
 
 ### Fasteners, Inserts & Tools
 | Hardware | Item / Link | Notes |
 | :--- | :--- | :--- |
-| **Heat-Set Threaded Inserts** | [M2.5 Heat-Set Brass Inserts (Amazon)](https://www.amazon.com/dp/B0FWCG2K1F?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) | Installed into 3D-printed standoffs for durable screw fastening |
+| **Heat-Set Threaded Inserts** | [M2.5 Heat-Set Brass Inserts (Amazon)](https://www.amazon.com/dp/B0FWCG2K1F?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) | Installed into 3D-printed standoffs for durable screw fastening (or AliExpress) |
 | **Screws & Nuts Assortment** | [Mxuteuk Metric M2/M2.5/M3 Screws & Nuts Kit (Amazon)](https://www.amazon.com/dp/B0G8F366MV?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) | M2.5 socket head cap screws used for assembling top and bottom case |
 | **Soldering Iron** | [80W Digital Soldering Iron Kit (Amazon)](https://www.amazon.com/dp/B08R3515SF?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) | Budget adjustable-temp iron suitable for wiring and heat-setting inserts |
 | **Allen / Hex Key** | Standard small M2.5 hex wrench (included with screw kit) | Used for driving screws and reaming undersized holes |
@@ -102,6 +106,8 @@ All enclosure STL models are located in the [`3d Print Files/`](3d%20Print%20Fil
    The screw holes in the 3D printed files were intentionally modeled slightly undersized to account for different printer tolerances and shrinkage. **You can easily clear / enlarge them to the perfect diameter simply by running through them with the small Allen hex key used for the M2.5 screws.**
 2. **Heat-Set Insert Installation**:  
    Set your soldering iron to ~220–250°C (if printing in PLA/PETG). Place an M2.5 brass heat-set insert over each mounting hole, gently press down with the tip of the soldering iron until the insert sinks flush with the plastic rim, then remove the iron and let it cool without disturbing it.
+3. **Modular JST Connectors (Crucial for Assembly)**:  
+   Because the custom enclosure is compact and tightly integrated, soldering all components directly to the RP2040 board with permanent wires makes mechanical assembly nearly impossible. **Using JST connectors (or pre-crimped JST pigtails) allows each module—trackpad, encoders, LED, and buttons—to be unplugged during installation and snapped together inside the case.**
 
 ---
 
